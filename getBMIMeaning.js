@@ -11,11 +11,11 @@ function getBMIMeaning(weight, height) {
   // - BMI อยู่ในช่วง 18.5 -24.9 จะแสดงข้อความ "Normal weight"
   // - BMI > 25.0 จะแสดงข้อความ "Overweight"
   if(BMI < 18.5) 
-    console.log( "Underweight")
+    return "Underweight"
   else if(BMI >= 18.5 && BMI <= 24.9)
-    console.log( "Normal weight")
+  return "Normal weight"
   else if (BMI > 25.0)
-    console.log( "Overweight")
+  return "Overweight"
 }
 
 getBMIMeaning(65, 1.8)
